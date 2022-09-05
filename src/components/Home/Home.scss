@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap");
+.banner {
+  height: 600px;
+  min-width: 100vw;
+  background-color: black;
+  background-image: linear-gradient(
+      to right,
+      rgba(5, 1, 1, 0.963),
+      rgba(187, 92, 92, 0.112)
+    ),
+    url("./712464.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0.95;
+  //filter: grayscale(60%);
+  > .titleBox {
+    //height: 30rem;
+    margin: 4rem 4rem;
+    width: 30%;
+    //border: 1px solid white;
+
+    > h1 {
+      margin: 1rem;
+      z-index: 10;
+      font-size: 2.4rem;
+      color: #fbfbfb;
+      font-family: "Cinzel", serif;
+    }
+    > .info {
+      // display: flex;
+      // justify-content: space-between;
+      margin: 1rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.536);
+    }
+    > .description {
+      margin: 1rem;
+      margin-top: 3rem;
+      font-weight: 500;
+      color: white;
+      //word-spacing: 2px;
+      line-height: 1.3rem;
+      
+    }
+    > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 7rem;
+      margin: 2rem;
+      margin-right: 0.5rem;
+      margin-top: 4rem;
+      font-size: 1rem;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    > .play {
+      background-color: whitesmoke;
+      color: black;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.503);
+      }
+    }
+    > .mylist {
+      background-color: rgb(28, 27, 27);
+      color: white;
+      padding: 1rem;
+      &:hover {
+        background-color: rgba(119, 114, 114, 0.51);
+      }
+      // > svg{
+      //   padding: 1rem;
+      // }
+    }
+    //background-image: url("./title.png");
+    //background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .titleBox {
+      //height: 30rem;
+      margin: 4rem 4rem;
+      width: 30%;
+      //border: 1px solid white;
+
+      > h1 {
+        margin: 1rem;
+        margin-top: 3rem;
+        z-index: 10;
+        font-size: 1.5rem;
+        color: white;
+        font-family: "Cinzel", serif;
+      }
+      > .info {
+        // display: flex;
+        // justify-content: space-between;
+        margin: 1rem;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.536);
+      }
+      > .description {
+        margin: 1rem;
+        font-size: 0.8rem;
+        margin-top: 2rem;
+        font-weight: 500;
+        color: white(76, 14, 14);
+        line-height: 1.1rem;
+      }
+    }
+    @media only screen and (max-width: 650px) {
+      .description {
+        display: none;
+      }
+    }
+  }
+}
+.row {
+  min-width: 100vw;
+  background: black;
+  color: white;
+  padding: 10px;
+  overflow-x: auto;
+  //border: 1px solid white;
+  > h2 {
+    margin-top: 1.5rem;
+    margin-left: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
+.cardsContainer {
+  margin-left: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  margin-top: 1rem;
+  height: 16rem;
+  width: 100%;
+  box-sizing: border-box;
+  > img {
+    margin-right: 0.7rem;
+    height: 100%;
+    width: 15rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-10px) scale(1.18);
+    }
+  }
+}
+
+.btnContainer {
+  display: flex;
+
+  > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 7rem;
+    margin: 2rem;
+    margin-right: 0.5rem;
+    margin-top: 4rem;
+    font-size: 1rem;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  > .play {
+    background-color: whitesmoke;
+    color: black;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.503);
+    }
+  }
+  > .mylist {
+    background-color: rgb(28, 27, 27);
+    color: white;
+    padding: 1rem;
+    &:hover {
+      background-color: rgba(119, 114, 114, 0.51);
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    > button {
+      height: 2rem;
+      > p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    > button {
+      width: 3rem;
+      height: 2rem;
+      > p {
+        display: none;
+      }
+    }
+  }
+}

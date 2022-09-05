@@ -1,0 +1,67 @@
+//@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+body {
+  width: 100vw;
+}
+.nlogo {
+  height: 5rem;
+  width: 10rem;
+  margin-left: 0.6rem;
+}
+.header {
+  height: 5rem;
+  width: 100vw;
+  background: black;
+  display: flex;
+  align-items: center;
+  
+  > div {
+    height: 70%;
+    width: 80%;
+    margin-left: 4vmax;
+    display: flex;
+    align-items: center;
+    //border: 1px solid white;
+    box-sizing: border-box;
+
+
+    > .allLinks {
+      color: white;
+      margin: 1rem;
+      font-size: 1.18rem;
+      font-weight: 300;
+      text-decoration: none;
+      @media only screen and (max-width: 650px) {
+        font-size: 1rem;
+        font-weight: 100;
+        margin: 0.5rem;
+      }
+      @media only screen and (max-width: 550px){
+        display: none;
+       }
+    }
+  }
+  > svg {
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    @media only screen and (max-width: 700px) {
+      font-weight: 100;
+      margin-right: 0.5rem;
+    }
+    @media only screen and (max-width: 550px){
+      display: none;
+     }
+    &:hover {
+      color: rgba(255, 255, 255, 0.553);
+    }
+  }
+}
